@@ -1,0 +1,82 @@
+@media screen and (max-width: 500px) {
+  .todayWeather,
+  .nextDayWeather,
+  .afterNextDayIcon {
+    margin: 20px 0px;
+  }
+  #subscribeBtn {
+    padding: 0px;
+
+    width: 80%;
+  }
+  .collapse {
+    position: relative;
+    right: 80px;
+  }
+
+  .logo {
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+  }
+  .logo-title {
+    padding: 0px;
+  }
+  .special-btn {
+    width: 30%;
+  }
+
+  #subscribeArea {
+    font-size: 12px;
+  }
+  .copyRight {
+    text-align: center;
+  }
+  .social-links {
+    text-align: center;
+  }
+}
+
+#subscribeBtn {
+  width: 30%;
+}
+
+@media screen and (min-width: 501px) and (max-width: 991px) {
+  .todayWeather {
+    height: 90%;
+  }
+  .special-btn {
+    width: 30%;
+  }
+
+  .collapse {
+    position: relative;
+    right: 23%;
+  }
+
+  .logo {
+    position: relative;
+    left: 70px;
+  }
+  .logo-title {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 923px) and (max-width: 1200px) {
+  .todayWeather {
+    height: 90%;
+  }
+  .special-btn {
+    width: 30%;
+  }
+
+  .collapse {
+    position: relative;
+    right: 150px;
+  }
+
+  .logo-title {
+    padding: 0px;
+  }
+}

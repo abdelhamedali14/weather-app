@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <!-- start navgation bar -->
+    <div class="header  ">
+        <nav class="navbar navbar-expand-lg   p-3">
+            <div class="container">
+                <a class="navbar-brand ps-2 " href="#"></a>
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="logo-title text-white ps-2  \">
+                    <h3>Weather</h3>
+                    <p> <small class="">tagline goes here</small></p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 pe-3">
+                        <li class="nav-item p-3">
+                            <a class="nav-link  p-2  active main-link  " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link  p-2" href="#">News</a>
+                        </li>
+
+                        <li class="nav-item p-3">
+                            <a class="nav-link  p-2 ">Live cameras</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link  p-2">photos</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link  p-2 ">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- end navgation bar -->
+
+    <!-- start home and Search area  -->
+
+    <div class="homeCover">
+        <div class="container  ">
+            <form class="find-location position-relative  text-white " role="search">
+                <input class="form-control rounded-pill  searchArea p-3 " id="userInput"
+                    placeholder="Find your location..." aria-label="
+                        Search">
+                <button type="button" id="serchBtn"
+                    class="btn btn-info special-btn rounded-pill  position-absolute ">find</button>
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <!-- end home and Search area  -->
+
+
+    <!-- start Weather result -->
+
+    <div>
+        <div class="container py-5 text-white ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="todayWeather  card ">
+                        <div class="todayHeader  d-flex justify-content-between p-3">
+                            <div class="dayNAme ps-1"></div>
+                            <div class="dayNumber pe-1 "></div>
+                        </div>
+                        <div class="forcastBody  ps-3  py-3 ">
+                            <p id="nameOfCity" class="fs-5 "></p>
+                            <div class="section1Details  position-relative">
+                                <h3 class=" py-1 fs-1 tempature"></h3>
+                            </div>
+                            <div class="d-flex flex-column  py-2">
+                                <img src="" class="todayConditionIcon  "></img>
+                                <span class="currentCondition   "></span>
+                            </div>
+
+                            <div class="details my-3 d-flex  py-3 ">
+                                <div class="me-3">
+                                    <i class="fas fa-umbrella pr-1  "></i>
+                                    <span id="humidty"> </span><span>%</span>
+
+                                </div>
+                                <div class="me-3"> <i class="fas fa-wind pl-3 pr-1"></i>
+                                    <span id="wind"></span> <span>km/h</span>
+                                </div>
+                                <div class="">
+                                    <i class="far fa-compass pl-3 pr-1"></i>
+                                    <span id="compass"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class=" nextDayWeather card text-center">
+                        <div class="  py-2 nextDayTwoHeader  ">
+                            <h3 class="nextDayDate "></h3>
+                        </div>
+
+                        <div class="p-2">
+                            <img src="" class="nextDayIcon  my-3 ">
+                        </div>
+
+                        <div class="nextDayDegree py-2">
+                            <h4 class="py-1 max-degree "></h4>
+                            <h6 class="py-2 min-degree "></h6>
+                        </div>
+                        <div class="   my-4 py-3  ">
+                            <p class="  nextDayDescription  "></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="afterNextDayWeather card text-center">
+                        <div class=" p-2  afterNextDayHeader">
+                            <h3 class="afternextDayDate"></h3>
+                        </div>
+                        <div class="p-2">
+                            <img src="" class="afterNextDayIcon my-3">
+                        </div>
+                        <div class="TempAvrg py-2">
+                            <h4 class="py-1 AfterNExtDayhigheTemp""></h4>
+                            <h6 class=" py-2 AfterNExtDayloweTemp">
+                                </h6>
+                        </div>
+                        <div class=" my-4 py-3 ">
+                            <p class="afterNextDayDescription "></p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Weather result -->
+
+    <!-- start subscribe area  -->
+    <footer class=" py-5">
+        <div class="container subscribe  ">
+            <div class="row align-items-center d-flex justify-content-between">
+                <div class="col-md-7  ">
+                    <div>
+
+                        <form action="#" class="subscribe-form position-relative">
+                            <input id="subscribeArea" type="search" class="form-control rounded-pill  "
+                                placeholder="Enter your email to subscribe...">
+                            <input type="submit" value="Subscribe" id="subscribeBtn"
+                                class=" rounded-pill position-absolute ">
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4  ">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook m-1 fs-4 p-2  link"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter  m-1 fs-4 p-2 link"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus m-1 fs-4 p-2 link"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest  m-1 fs-4  p-2 link"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 ps-2">
+                <p class="copyRight"> Copyright © 2022 Designed by abdelhamed ali. All rights reserved</p>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+    <!-- end subscribe area  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

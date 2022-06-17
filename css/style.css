@@ -1,0 +1,157 @@
+.main-color {
+  color: #1e202b;
+}
+
+:root {
+  --mainComlor: #1e202b;
+
+  box-sizing: border-box;
+}
+
+/* start nav bar */
+.navbar {
+  background-color: var(--mainComlor);
+  cursor: pointer;
+}
+
+small {
+  font-size: 10px;
+}
+.nav-item {
+  margin: 0px 5px;
+}
+.nav-link {
+  transition: all 0.5s;
+  border: 2px solid transparent;
+  font-size: 1em;
+  color: white;
+  padding: 10px 20px !important;
+  border-radius: 30px;
+}
+
+.nav-link:hover {
+  border: 2px solid #009ad8;
+}
+.main-link {
+  border: 2px solid #009ad8;
+  color: blue;
+}
+
+/* end nav bar */
+
+.homeCover {
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  background-position: top left;
+  padding: 70px 0;
+}
+/* start search area */
+body {
+  background-color: var(--mainComlor);
+  color: rgb(191, 193, 200) !important;
+}
+.special-btn {
+  background: #009ad8;
+  right: 0;
+  top: 0px;
+  padding: 15px;
+  color: white;
+  width: 15%;
+  letter-spacing: 2px;
+}
+.searchArea {
+  width: 99%;
+  background: #1e202b;
+  border: #1e202b;
+  color: white;
+  border-radius: 40px;
+}
+
+.find-location input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px 50px;
+}
+/* end search area */
+
+/* start reasult area */
+.nextDayTwoHeader,
+.afterNextDayHeader,
+.todayHeader {
+  background-color: gray;
+}
+.todayConditionIcon {
+  width: 65px;
+}
+.afterNextDayIcon,
+.afterNextDayIcon {
+  width: 65px;
+}
+
+.section1Details {
+  font-size: 6.4285714286rem;
+  margin-right: 30px;
+}
+
+.nextDayIcon,
+.afterNextDayIcon {
+  width: 20%;
+}
+
+.todayWeather,
+.afterNextDayWeather,
+.nextDayWeather {
+  background-color: #009ad8;
+  transition: all 1s;
+}
+
+.todayWeather:hover {
+  background-color: #104e64;
+}
+.afterNextDayWeather:hover {
+  background-color: #104e64;
+}
+.nextDayWeather:hover {
+  background-color: #104e64;
+}
+/* end reasult area */
+
+/* start subsrcibe area */
+footer {
+  background-color: rgb(38, 41, 54);
+}
+
+#subscribeBtn {
+  position: absolute;
+  width: 30%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px 20px;
+  background-color: #009ad8;
+  border-color: #009ad8;
+  border-radius: 40px;
+  color: white;
+}
+#subscribeArea {
+  width: 99%;
+  padding: 10px;
+  background: #1e202b;
+  color: white;
+  border-radius: 40px;
+  border: 1px solid #1e202b;
+}
+
+.link:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.link {
+  border: 2px solid rgb(38, 41, 54);
+  transition: all 0.1s;
+  border-radius: 50%;
+}
+/* end subsrcibe area */
