@@ -19,12 +19,13 @@ small {
 }
 .nav-item {
   margin: 0px 5px;
+  color: white;
 }
 .nav-link {
   transition: all 0.5s;
   border: 2px solid transparent;
   font-size: 1em;
-  color: white;
+  color: white !important;
   padding: 10px 20px !important;
   border-radius: 30px;
 }
@@ -50,20 +51,21 @@ body {
   background-color: var(--mainComlor);
   color: rgb(191, 193, 200) !important;
 }
-.special-btn {
+/* .special-btn {
+
   background: #009ad8;
   right: 0;
   top: 0px;
+  width:20% !important;
   padding: 15px;
   color: white;
-  width: 15%;
+
   letter-spacing: 2px;
-}
-.searchArea {
-  width: 99%;
+} */
+#search-bar {
   background: #1e202b;
   border: #1e202b;
-  color: white;
+  color: white !important;
   border-radius: 40px;
 }
 

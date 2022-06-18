@@ -1,8 +1,8 @@
-let currentCity = "alexandria  ";
-let userInput = document.getElementById("userInput"); // search bar
-let serchBtn = document.getElementById("serchBtn"); // button (seacrh)
-let data = serchBtn.addEventListener("click", function (event) {
-  currentCity = userInput.value;
+let currentCity = "alexandria";
+let searchBar = document.getElementById("search-bar"); // button (seacrh)
+
+searchBar.addEventListener("keyup", function () {
+  currentCity = searchBar.value;
   GetInfoCity();
 });
 // on load
@@ -17,22 +17,21 @@ GetInfoCity();
     "Thursday",
     "Friday",
     "Saturday",
-  ])(
-    (monthName = [
-      "Jan",
-      "Feb",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "Aug",
-      "Sept",
-      "Oct",
-      "Nov",
-      "Dec",
-    ])
-  );
+  ]),
+  (monthName = [
+    "Jan",
+    "Feb",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ]);
 
 async function GetInfoCity() {
   let response = await fetch(

@@ -5,79 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome link -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- media queiry link -->
     <link rel="stylesheet" href="css/media.css">
     <title>Weather app</title>
 </head>
 
 <body>
     <!-- start navgation bar -->
-    <div class="header  ">
-        <nav class="navbar navbar-expand-lg   p-3">
-            <div class="container">
+    <header class="header  ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black">
+            <div class="container ">
+
                 <a class="navbar-brand ps-2 " href="#"></a>
                 <img src="images/logo.png" alt="" class="logo">
                 <div class="logo-title text-white ps-2  \">
                     <h3>Weather</h3>
                     <p> <small class="">tagline goes here</small></p>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 pe-3">
-                        <li class="nav-item p-3">
-                            <a class="nav-link  p-2  active main-link  " aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse   end-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 pe-3 ">
+                        <li class="nav-item p-1">
+                            <a class="nav-link    active main-link " aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item p-3">
-                            <a class="nav-link  p-2" href="#">News</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link  " href="#">News</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link  ">Live cameras</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link  ">photos</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link   ">Contact</a>
                         </li>
 
-                        <li class="nav-item p-3">
-                            <a class="nav-link  p-2 ">Live cameras</a>
-                        </li>
-                        <li class="nav-item p-3">
-                            <a class="nav-link  p-2">photos</a>
-                        </li>
-                        <li class="nav-item p-3">
-                            <a class="nav-link  p-2 ">Contact</a>
-                        </li>
+
                     </ul>
 
                 </div>
             </div>
         </nav>
-    </div>
 
+    </header>
     <!-- end navgation bar -->
 
     <!-- start home and Search area  -->
 
-    <div class="homeCover">
+    <section class="homeCover">
         <div class="container  ">
-            <form class="find-location position-relative  text-white " role="search">
-                <input class="form-control rounded-pill  searchArea p-3 " id="userInput"
-                    placeholder="Find your location..." aria-label="
-                        Search">
-                <button type="button" id="serchBtn"
-                    class="btn btn-info special-btn rounded-pill  position-absolute ">find</button>
-            </form>
+            <div class="search m-auto d-flex justify-content-center ">
+                <input type="text" id="search-bar" class="w-50 mb-5 btn-outline-dark p-2 rounded-pill text-white "
+                    placeholder="&#xF002; Search City..." style="font-family:Arial, FontAwesome" />
+            </div>
         </div>
 
 
 
 
-    </div>
+    </section>
     <!-- end home and Search area  -->
 
 
     <!-- start Weather result -->
 
-    <div>
+    <section>
         <div class="container py-5 text-white ">
             <div class="row ">
                 <div class="col-md-4 ">
@@ -155,7 +158,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- end Weather result -->
 
     <!-- start subscribe area  -->
@@ -195,7 +198,10 @@
 
     </footer>
     <!-- end subscribe area  -->
+    <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom main js -->
     <script src="js/main.js"></script>
 </body>
 
